@@ -27,5 +27,16 @@ public class iphone {
         aparelhoTelefonico.tocar("(99)99999-7777");
         aparelhoTelefonico.atender();
         aparelhoTelefonico.desligar();
+
+        System.out.println("-----------NAVEGADOR-----------");
+        Navegador navegador = new Navegador();
+        navegador.adicionarNovaAba();
+        navegador.exibirPagina("www.google.com");
+        navegador.adicionarNovaAba();
+        navegador.exibirPagina("www.google.com");
+        navegador.exibirPagina("www.google.com", 1);
+        navegador.fecharAba(0);
+        navegador.atualizarPagina();
+
     }
 }
