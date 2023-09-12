@@ -2,6 +2,7 @@ public class iphone {
 
     public static void main(String[] args) {
         //Reprodutor Musical
+        System.out.println("-----------REPRODUTOR MUSICAL-----------");
         ReprodutorMusical reprodutorMusical = new ReprodutorMusical();
         reprodutorMusical.pausar();
         reprodutorMusical.continuar();
@@ -14,6 +15,17 @@ public class iphone {
         reprodutorMusical.tocarMusica("DÓI");
         reprodutorMusical.tocarMusica("ENTÃO VALEU");
 
+        System.out.println("-----------APARELHO TELEFONICO-----------");
 
+        AparelhoTelefonico aparelhoTelefonico = new AparelhoTelefonico();
+        aparelhoTelefonico.ligar("(99)99999-9999");
+        aparelhoTelefonico.confirmarAtendimento();
+        aparelhoTelefonico.desligar();
+        aparelhoTelefonico.ligar("(99)99999-8888");
+        aparelhoTelefonico.iniciarCorreioDeVoz();
+        aparelhoTelefonico.desligar();
+        aparelhoTelefonico.tocar("(99)99999-7777");
+        aparelhoTelefonico.atender();
+        aparelhoTelefonico.desligar();
     }
 }
